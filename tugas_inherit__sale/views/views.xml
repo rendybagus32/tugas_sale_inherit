@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="tugas_inherit__sale.list">
+      <field name="name">tugas_inherit_Sale list</field>
+      <field name="model">tugas_inherit__sale.tugas_inherit__sale</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="tugas_inherit__sale.action_window">
+      <field name="name">tugas_inherit_Sale window</field>
+      <field name="res_model">tugas_inherit__sale.tugas_inherit__sale</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="tugas_inherit__sale.action_server">
+      <field name="name">tugas_inherit_Sale server</field>
+      <field name="model_id" ref="model_tugas_inherit__sale_tugas_inherit__sale"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="tugas_inherit_Sale" id="tugas_inherit__sale.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="tugas_inherit__sale.menu_1" parent="tugas_inherit__sale.menu_root"/>
+    <menuitem name="Menu 2" id="tugas_inherit__sale.menu_2" parent="tugas_inherit__sale.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="tugas_inherit__sale.menu_1_list" parent="tugas_inherit__sale.menu_1"
+              action="tugas_inherit__sale.action_window"/>
+    <menuitem name="Server to list" id="tugas_inherit__sale" parent="tugas_inherit__sale.menu_2"
+              action="tugas_inherit__sale.action_server"/>
+-->
+  </data>
+</odoo>
